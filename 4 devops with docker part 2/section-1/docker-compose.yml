@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  yt-dlp-ubuntu:
+    image: marcindz2/yt-dlp
+    build: .
+    volumes:
+      - .:/mydir
+    container_name: yt-dlp
+    
